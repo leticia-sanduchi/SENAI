@@ -1,0 +1,911 @@
+EQUIPAMENTOS DE REDES - São responsáveis pela interligação, comunicação e segurança em redes de computadores. Eles garantem que os pacotes de dados sejam transmitidos corretamente entre dispositivos dentro de uma LAN (Local Area Network) ou entre redes diferentes.
+
+
+- Equipamentos passivos:
+	- TOMADA DE SUPERFÍCIE: São pontos de conexão para cabos de rede, geralmente instaladas em paredes, pisos ou mobiliários, permitindo a conexão de dispositivos à infraestrutura cabeada.
+CARACTERÍSTICAS:
+- Possuem conectores RJ45 fêmea
+- Podem ser de embutir ou sobrepor
+- Categorias variadas (Cat5e, Cat6, Cat6A, Cat7)
+- Proporcionam organização e flexibilidade na rede
+
+
+	- PATCH CORD: É um cabo de conexão com conectores RJ45 em ambas as extremidades usado para interligar dispositivos de rede como computadores, switches e patch panels.
+CARACTERÍSTICAS:
+- Disponível em várias categorias (Cat5e, Cat6, Cat6A, Cat7)
+- Comprimentos variados (geralmente de 0,5m a 10m)
+- Pode ser blindado (STP) ou não blindado (UTP)
+- Padrões de cabeamento: T568A e T568B
+
+
+	- PATCH PANEL: É um painel de conexões usado para organizar e distribuir os cabos de rede dentro de um rack. Ele facilita a gestão e manutenção da infraestrutura.
+CARACTERÍSTICAS:
+- Disponível em 12, 24, 48 ou mais portas RJ45
+- Possui estrutura modular para instalação em racks
+- Pode ser não gerenciado (passivo) ou gerenciado (ativo, com monitoramento)
+- Facilita a reorganização e manutenção de rede
+
+
+	- RACK DE REDE: Rack de rede ou rack de telecomunicação é um armário metálico utilizado para acomodar equipamentos de rede como switches, servidores, patch panels e roteadores.
+CARACTERÍSTICAS:
+- Tamanhos padronizados em U (altura), como 12U, 24U, 42U
+- Pode ser aberto (estrutura vazada) ou fechado (com portas e ventilação)
+- Inclui bandejas, organizadores de cabos e unidades de ventilação
+- Geralmente tem padrão 19 polegadas, garantindo compatiblidade com equipamentos
+
+
+- Equipamentos ativos:
+	- ROTEADOR: É um dispositivo de camada 3 (Rede) do modelo OSI que tem a funcção de encaminhar pacotes entre diferentes redes. Ele utiliza tabelas de roteamento para determinar o melhor caminho para o tráfego de dados.
+FUNÇÕES PRINCIPAIS:
+- Encaminhamento de pacotes
+- NAT (Network Address Translation)
+- DHCP (Dynamic Host Configuration Protocol)
+- Firewall e Segurança
+- Conexão de redes distintas
+
+	- SWITCH: É um equipamento de camada 2 (Enlace) do modelo OSI que conecta dispositivos dentro de uma mesma rede local. Ele gerencia o tráfego internamente usando endereços MAC.
+FUNÇÕES PRINCIPAIS:
+- Encaminhamento baseado em MAC (Endereço físico)
+- Criação de VLANs (Virtual Local Area Network)
+- Full Duplex
+- Segurança
+
+	- ACCESS POINT (AP): Permite a conexão de dispositivos sem fio à rede cabeada, funcionando como um "extensor" do sinal.
+FUNÇÕES PRINCIPAIS:
+- Ampliação da cobertura Wi-Fi
+- Autenticação e controle de acesso
+- Suporte a múltiplas SSIDs e VLANs (Virtual Local Area Network)
+
+	- GATEWAY: É um dispositivo (hardware ou software) que interliga redes diferentes, permitindo a comunicação entre sistemas que usam diferentes protocolos.
+FUNÇÕES PRINCIPAIS:
+- Conversão de endereços e protocolos
+- Encaminhamento de tráfego entre redes
+- Implementação de regras de segurança
+
+	- FIREWALL: O firewall protege a rede bloqueando ou permitindo tráfego com base em regras de segurança.
+FUNÇÕES PRINCIPAIS:
+- Filtragem de pacotes
+- Bloqueio de acessos não autorizados
+- Monitoramento de tráfego e logs
+TIPOS DE FIREWALL:
+- Firewall de software: Instalado em sistemas operacionais (exemplo: Windows Defender, IPTables no Linux)
+- Firewall de hardware: Equipamentos dedicados que protegem redes corporativas
+
+	- TRANSCEIVER - TRANSCEPTOR/CONVERSOR: São dispositivos responsáveis pela conversão e transmissão de sinais ópticos ou elétricos em redes de comunicação. Eles são usados para conectar switches, roteadores e outros equipamentos.
+
+
+MODELOS E PROTOCOLOS DE REDES - Servem como uma estrutura conceitual para descrever como a comunicação ocorre entre dispositivos. Dois modelos principais: Modelo OSI e Modelo TCP/IP. Definem as regras e padrões de comunicação.
+
+Modelo OSI: Física (responsável pela transmissão física) -> Enlace (organiza os pacotes físicos, que seram enviados pela camada física) -> Rede -> Transporte (garante que todos os fragmentos sejam enviados e recebidos) -> Sessão (estabelece uma conexão entre as máquinas) -> Apresentação (responsável por tranformar os dados, como criptografar algo) -> Aplicação
+Modelo TCP/IP: Acesso a rede -> Internet -> Transporte -> Aplicação
+
+IMPORTÂNCIA DOS PROTOCOLOS DE REDES:
+- Garantem que dispositivos diferentes possam se comunicar
+- Definem regras como endereçamento, formatação de dados e controle de erros
+- Exemplos: HTTP, FTP, SMTP, TCP, UDP, IP, comunicação
+
+ARQUITETURA TCP/IP
+Camadas:
+- Aplicação: HTTP, FTP, SMTP
+- Transporte: TCP, UDP
+- Internet: IP, ICMP
+- Acesso à rede: Ethernet, Wi-Fi
+
+Comparativo com o Modelo OSI:
+TCP/IP foi desenvolvido para a internet e é mais prático do que o modelo OSI
+
+IPv4 e IPv6
+- IPv4(Internet Protocol version 4) é a quarta versão do Protocolo de Internet, amplamente utilizado para identificação e localização de dispositivos na rede. Foi desenvolvido nos anos 1980 e se tornou o padrão para comunicação na Internet. IMPORTÂNCIA: IPv4 é a base da maioria das redes atuais, sendo responsável por permitir a comunicação entre dispositivos de forma confiável e eficiente.
+
+
+ESTRUTURA DE ENDEREÇO - Um endereço IPv4 é um número de 32 bits, dividido em quatro octetos. Representado em notação decimal com pontos.
+192.168.1.12
+11000000. 10101000. 00000001. 00001100
+
+CONVERSÃO:
+Exemplo: 10.253.1.111
+
+    | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+    |     |    |    |    |   |   |   |   |
+10  |  0  |  0 |  0 |  0 | 1 | 0 | 1 | 0 |
+253 |  1  |  1 |  1 |  1 | 1 | 1 | 0 | 1 |
+1   |  0  |  0 |  0 |  0 | 0 | 0 | 0 | 1 |
+111 |  0  |  1 |  1 |  0 | 1 | 1 | 1 | 1 |
+
+Transforme os endereços IPv4 abaixo em binário:
+a)172.16.0.194
+10101100. 00010000. 00000000. 11000010
+
+b)10.108.200.33
+00001010. 01101100. 11001000. 00100001
+
+c)192.169.253.45
+11000000. 10101001. 11111101. 00101101
+
+d)35.215.58.98
+00100191. 11010111. 00111010. 01100010
+
+e)173.253.227.4
+10101101. 11111101. 11100011. 00000100
+
+CLASSES DE ENDEREÇOS:
+- Classe A: Endereços de 0.0.0.0 a 127.255.255.255. Grandes redes, com poucos bits para a rede e muitos para os hosts.
+
+- Classe B: Endereços de 128.0.0.0 a 191.255.255.255. Redes de tamanho médio.
+
+- Classe C: Endereços de 192.0.0.0 a 223.255.255.255. Redes pequenas, com muitos bits para a rede e poucos para os hosts.
+
+- Classe D: Endereços de 224.0.0.0 a 239.255.255.255. Usados para multicast.
+
+- Classe E: Endereços de 240.0.0.0 a 255.255.255.255. Reservaods para pesquisas e testes.
+
+ENDEREÇOS ESPECIAIS
+Redes locais: Faixas de endereços como:
+10.0.0.0 - 10.255.255.255,
+172.16.0.0 - 172.31.255.255 e
+192.168.0.0 - 192.168.255.255
+
+são reservadas para uso em redes privadas e não podem ser roteadas na internet
+pública.
+
+Multicast: Endereços multicast são usados ​para enviar um único pacote de dados
+para um grupo de destinos simultâneos.
+
+Endereço de Loopback: 127.0.0.1. Usado para testar a pilha de rede local.
+
+- IPv6 (Internet Protocol version 6) é a sexta versão do Protocolo de Internet, projetado para substituir o IPv4 devido à exaustão de endereços IP disponíveis no IPv4, IPv6 foi desenvolvido nos anos 1990 e se tornou o padrão emergente para
+comunicação na Internet, trazendo várias melhorias em relação ao IPv4.
+
+Importância: IPv6 é crucial para o futuro da Internet, pois oferece um espaço
+de endereçamento muito maior. Suporta o crescimento contínuo da Internet e a
+proliferação de dispositivos conectados, como smartphones, IoT (Internet das Coisas) e
+outros.
+
+ESTRUTURA DE ENDEREÇO - Um endereço IPv6 é um número de 128 bits, dividido em oito grupos de 16 bits, chamado de duocteto. Cada grupo é representado por 4 dígitos hexadecimais (O-F)
+2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+
+
+MÁSCARAS DE SUB-REDE:
+
+Uma máscara de sub-rede é usada para dividir uma rede IP em sub-redes
+menores, o que facilita a organização e o gerenciamento da rede. Ela define qual
+parte do endereço IP é a parte da rede e qual parte é a parte do host (TUDO QUE EU CONECTO NA MINHA REDE É UM HOST). A notação
+CIDR (Classless Inter-Domain Routing) é uma maneira de representar a máscara de
+sub-rede, como /24, que indica que os primeiros 24 bits do endereço IP são usados
+para a rede.
+
+Rede Original: 192.168.1.0/24
+
+•Endereço IP: 192.168.1.0
+•Máscara de sub-rede: 255.255.255.0 (ou /24)
+•Número de endereços na rede: 2^(32-24) = 2^8 = 256
+•Endereços disponíveis para hosts: 256 - 2 (rede e broadcast) = 254
+
+---------------------------------------------------------------------
+
+IP: 192.168.1.25/24 
+Rede: 192.168.1.0 
+1°IP: 192.168.1.1 
+2°IP: 192.168.1.254 
+Broadcast: 192.168.1.255 
+ 
+IP: 10.0.5.200/8
+Rede: 10.0.0.0
+1° IP: 10.0.0.1 
+2° IP: 10.255.255.254 
+Broadcast: 10.255.255.255 
+ 
+IP: 172.20.35.180/16 
+Rede: 172. 20.0.0 
+1° IP: 172.20.0.1 
+Último IP: 172.20.255.254 
+Broadcast: 172.20.255.255 
+ 
+IP: 192.168.15.240/24 
+Rede: 192.168.15.0 
+1° IP: 192.168.15.1 
+Último IP: 192.168.15.254 
+Broadcast: 192.168.15.255 
+ 
+IP: 10.10.8.145/8 
+Rede: 10.0.0.0 
+1° IP: 10.0.0.1 
+2° IP: 10.255.255.254 
+Broadcast: 10.255.255.255 
+ 
+IP: 172.16.45.100/16 
+Rede: 172.16.0.0 
+1° IP: 172.16.0.1 
+2° IP: 172.16.255.254 
+Broadcast: 172.16.255.255 
+ 
+IP: 192.168.10.130/24 
+Rede: 192.168.10.0 
+1° IP: 192.168.10.1 
+2° IP: 192.168.10.254 
+Broadcast: 192.168.10.255 
+ 
+IP: 10.50.75.25/8 
+Rede: 10.0.0.0 
+1° IP: 10.0.0.1 
+2° IP: 10.255.255.254 
+Broadcast:10.255.255.255 
+ 
+IP: 172.31.200.99/16 
+Rede: 172.31.0.0 
+1° IP: 172.31.0.1 
+2° IP: 172.31.255.254 
+Broadcast: 172.31.255.255 
+ 
+IP: 192.168.100.67/24 
+Rede: 192.168.100.0 
+1° IP: 192.168.100.1 
+2° IP: 192.168.100.254 
+Broadcast:192.168.100.255
+
+------------------------------------------------ SO --------------------------------------------------
+
+Multiusuário e multitarefa - permitir que multiplos usuarios utilizem o sistema simultaneamente e executem multiplos sistemas ao mesmo tempo
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------- STYLE -----------------------------------------------
+
+Midnight, you come and pick me up, no headlights
+A long drive, could end in burning flames or paradise
+Fade into view oh, it's been a while since I have even heard from you, heard from you
+
+And I should just tell you to leave 'cause I know exactly where it leads but I watch us go 'round and 'round each time
+
+'Cause you got that James Jean daydream look in your eye, and I got that red lip classic thing that you like
+And when we go crashing down we come back every time 'cause we never go out of style, we never go out of style3
+
+Midnight
+You come and pick me up, no headlights
+Long drive
+Could end in burning flames or paradise
+Fade into view, oh
+It's been a while since I have even heard from you (heard from you)
+And I should just tell you to leave 'cause I
+Know exactly where it leads, but I
+Watch us go 'round and 'round each time
+You got that James Dean daydream look in your eye
+And I got that red lip classic thing that you like
+And when we go crashing down, we come back every time
+'Cause we never go out of style, we never go out of style
+You got that long hair, slicked back, white T-shirt
+And I got that good girl faith and a tight little skirt
+And when we go crashing down, we come back every time
+'Cause we never go out of style, we never go out of style
+So it goes
+He can't keep his wild eyes on the road, mm
+Takes me home
+The lights are off, he's taking off his coat, mm, yeah
+I say, "I heard, oh
+That you've been out and about with some other girl, some other girl"
+He says, "What you heard is true, but I
+Can't stop thinkin' 'bout you and I"
+I said, "I've been there too a few times"
+'Cause you got that James Dean daydream look in your eye
+And I got that red lip classic thing that you like
+And when we go crashing down, we come back every time
+'Cause we never go out of style, we never go out of style
+You got that long hair, slicked back, white T-shirt
+And I got that good girl faith and a tight little skirt (a tight little skirt)
+And when we go crashing down, we come back every time
+'Cause we never go out of style (we never go), we never go out of style
+Take me home
+Just take me home
+Yeah, just take me home
+Oh, whoa, oh
+(Out of style)
+Oh, you got that James Dean daydream look in your eye
+And I got that red lip classic thing that you like
+And when we go crashing down (now we go), we come back every time
+'Cause we never go out of style, we never go out of style
+
+---------------------------------------- STORY OF US -----------------------------------------
+
+I used to think one day we'd tell the story of us
+How we met and the sparks flew instantly
+And people would say, "They're the lucky ones"
+I used to know my place was a spot next to you
+Now I'm searching the room for an empty seat
+'Cause lately I don't even know what page you're on
+Oh, a simple complication
+Miscommunications lead to fall out
+So many things that I wish you knew
+So many walls up I can't break through
+Now I'm standing alone in a crowded room
+And we're not speaking and I'm dying to know
+Is it killing you like it's killing me? Yeah
+I don't know what to say since the twist of fate
+When it all broke down
+And the story of us looks a lot like a tragedy now
+Next chapter
+How'd we end up this way?
+See me nervously pulling at my clothes
+And trying to look busy
+And you're doing your best to avoid me
+I'm starting to think one day I'll tell the story of us
+How I was losing my mind when I saw you here
+But you held your pride like you should have held me
+Oh, I'm scared to see the ending
+Why are we pretending this is nothing?
+I'd tell you I miss you but I don't know how
+I've never heard silence quite this loud
+Now I'm standing alone in a crowded room
+And we're not speaking and I'm dying to know
+Is it killing you like it's killing me? Yeah
+I don't know what to say since the twist of fate
+When it all broke down
+And the story of us looks a lot like a tragedy now
+This is looking like a contest
+Of who can act like they care less
+But I liked it better when you were on my side
+The battle's in your hands now
+But I would lay my armor down
+If you'd say you'd rather love than fight
+So many things that you wish I knew
+But the story of us might be ending soon
+Now I'm standing alone in a crowded room
+And we're not speaking and I'm dying to know
+Is it killing you like it's killing me, yeah
+But I don't know what to say since the twist of fate
+When it all broke down
+And the story of us looks a lot like a tragedy now, now, now
+And we're not speaking and I'm dying to know
+Is it killing you like it's killing me? Yeah
+I don't know what to say since the twist of fate
+'Cause we're going down
+And the story of us looks a lot like a tragedy now
+The end
+
+------------------------------------------ DEAR JOHN --------------------------------------------
+Long were the nights when
+My days once revolved around you
+Counting my footsteps
+Praying the floor won't fall through again
+And my mother accused me of losing my mind
+But I swore I was fine
+You paint me a blue sky
+And go back and turn it to rain
+And I lived in your chess game
+But you changed the rules every day
+Wondering which version of you I might get on the phone tonight
+Well, I stopped picking up and this song is to let you know why
+Dear John, I see it all now that you're gone
+Don't you think I was too young to be messed with?
+The girl in the dress, cried the whole way home
+I should've known
+Well, maybe it's me
+And my blind optimism to blame
+Or maybe it's you and your sick need
+To give love then take it away
+And you'll add my name to your long list of traitors
+Who don't understand
+And I'll look back and regret how I ignored when they said
+"Run as fast as you can"
+Dear John, I see it all now that you're gone
+Don't you think I was too young to be messed with?
+The girl in the dress, cried the whole way home
+Dear John, I see it all now, it was wrong
+Don't you think nineteen's too young
+To be played by your dark, twisted games when I loved you so?
+I should've known
+You are an expert at sorry and keeping the lines blurry
+Never impressed by me acing your tests
+All the girls that you've run dry have tired lifeless eyes
+'Cause you burned them out
+But I took your matches before fire could catch me
+So don't look now
+I'm shining like fireworks over your sad empty town
+Oh, oh
+Dear John, I see it all now that you're gone
+Don't you think I was too young to be messed with?
+The girl in the dress, cried the whole way home
+I see it all now that you're gone
+Don't you think I was too young to be messed with?
+The girl in the dress wrote you a song
+You should've known
+You should've known
+Don't you think I was too young?
+You should've known
+
+----------------------------------------- SPEAK NOW -------------------------------------------
+I am not the kind of girl
+Who should be rudely barging in on a white veil occasion
+But you are not the kind of boy
+Who should be marrying the wrong girl
+I sneak in and see your friends
+And her snotty little family all dressed in pastel
+And she is yelling at a bridesmaid
+Somewhere back inside a room
+Wearing a gown shaped like a pastry
+This is surely not what you thought it would be
+I lose myself in a daydream
+Where I stand and say
+Don't say yes, run away now
+I'll meet you when you're out of the church at the back door
+Don't wait, or say a single vow
+You need to hear me out
+And they said, "Speak now"
+Fond gestures are exchanged
+And the organ starts to play
+A song that sounds like a death march
+And I am hiding in the curtains
+It seems that I was uninvited by your lovely bride-to-be
+She floats down the aisle like a pageant queen
+But I know you wish it was me
+You wish it was me
+Don't you?
+Don't say yes, run away now
+I'll meet you when you're out of the church at the back door
+Don't wait, or say a single vow
+You need to hear me out
+And they said, "Speak now"
+Don't say yes, run away now
+I'll meet you when you're out of the church at the back door
+Don't wait, or say a single vow
+Your time is running out
+And they said, "Speak now"
+I hear the preacher say, "Speak now or forever hold your peace"
+There's the silence, there's my last chance
+I stand up with shaky hands, all eyes on me
+Horrified looks from everyone in the room
+But I'm only looking at you
+I am not the kind of girl
+Who should be rudely barging in on a white veil occasion
+But you are not the kind of boy
+Who should be marrying the wrong girl
+So don't say yes, run away now
+I'll meet you when you're out of the church at the back door
+Don't wait, or say a single vow
+You need to hear me out
+And they said, "Speak now"
+And you'll say, "Let's run away now"
+I'll meet you when I'm out of my tux at the back door
+Baby, I didn't say my vows
+So glad you were around
+When they said, "Speak now"
+
+------------------------------------- BACK TO DECEMBER -----------------------------------
+I'm so glad you made time to see me
+How's life? Tell me, how's your family?
+I haven't seen them in a while
+You've been good, busier than ever
+We small talk, work and the weather
+Your guard is up and I know why
+Because the last time you saw me
+Is still burned in the back of your mind
+You gave me roses and I left them there to die
+So this is me swallowin' my pride
+Standin' in front of you sayin' I'm sorry for that night
+And I go back to December all the time
+It turns out freedom ain't nothin' but missin' you
+Wishin' I'd realized what I had when you were mine
+I'd go back to December, turn around and make it alright
+I go back to December all the time
+These days, I haven't been sleepin'
+Stayin' up playin' back myself leavin'
+When your birthday passed and I didn't call
+Then I think about summer, all the beautiful times
+I watched you laughin' from the passenger's side
+And realized I loved you in the fall
+And then the cold came, the dark days
+When fear crept into my mind
+You gave me all your love and all I gave you was goodbye
+So this is me swallowin' my pride
+Standin' in front of you sayin' I'm sorry for that night
+And I go back to December all the time
+It turns out freedom ain't nothin' but missin' you
+Wishin' I'd realized what I had when you were mine
+I'd go back to December, turn around and change my own mind
+I go back to December all the time
+I miss your tan skin, your sweet smile
+So good to me, so right
+And how you held me in your arms that September night
+The first time you ever saw me cry
+Maybe this is wishful thinkin'
+Probably mindless dreamin'
+But if we loved again, I swear I'd love you right
+I'd go back in time and change it, but I can't
+So if the chain is on your door, I understand
+But this is me swallowin' my pride
+Standin' in front of you sayin' I'm sorry for that night
+And I go back to December
+It turns out freedom ain't nothin' but missin' you
+Wishin' I'd realized what I had when you were mine
+I'd go back to December, turn around and make it alright
+I'd go back to December, turn around and change my own mind
+I go back to December all the time
+All the time
+
+-------------------------------------------- RED -----------------------------------------------
+Loving him is like driving a new Maserati down a dead end street
+Faster than the wind, passionate as sin, ending so suddenly
+Loving him is like trying to change your mind
+Once you're already flying through the free fall
+Like the colors in autumn, so bright, just before they lose it all
+Losing him was blue, like I'd never known
+Missing him was dark gray, all alone
+Forgetting him was like trying to know
+Somebody you never met
+But loving him was red
+Loving him was red
+Touching him was like realizing all you ever wanted
+Was right there in front of you
+Memorizing him was as easy as knowing all the words
+To your old favorite song
+Fighting with him was like trying to solve a crossword
+And realizing there's no right answer
+Regretting him was like wishing you never found out
+That love could be that strong
+Losing him was blue, like I'd never known
+Missing him was dark gray, all alone
+Forgetting him was like trying to know
+Somebody you never met
+But loving him was red
+Oh, red
+Burning red
+Remembering him comes in flashbacks and echoes
+Tell myself it's time now gotta let go
+But moving on from him is impossible
+When I still see it all in my head
+In burning red
+Burning, it was red
+Oh, losing him was blue, like I'd never known
+Missing him was dark gray, all alone
+Forgetting him was like trying to know
+Somebody you never met
+'Cause loving him was red
+Yeah, yeah, red
+Burning red
+And that's why he's spinning 'round in my head
+Comes back to me, burning red
+Yeah, yeah
+His love was like driving a new Maserati down a dead end street
+
+------------------------------------------ FEARLESS --------------------------------------------
+There's somethin' bout the way
+The street looks when it's just rained
+There's a glow off the pavement
+You walk me to the car
+And you know I wanna ask you to dance right there
+In the middle of the parking lot
+Yeah
+Oh, yeah
+We're drivin' down the road
+I wonder if you know
+I'm tryin' so hard not to get caught up now
+But you're just so cool
+Run your hands through your hair
+Absent mindedly makin' me want you
+And I don't know how it gets better than this
+You take my hand and drag me head first
+Fearless
+And I don't know why
+But with you I'd dance in a storm
+In my best dress
+Fearless
+So baby drive slow
+'Til we run out of road in this one horse town
+I wanna stay right here in this passenger seat
+You put your eyes on me
+In this moment now capture it, remember it
+'Cause I don't know how it gets better than this
+You take my hand and drag me head first
+Fearless
+And I don't know why
+But with you I'd dance in a storm
+In my best dress
+Fearless
+Oh, oh
+Well you stood there with me in the doorway
+My hands shake
+I'm not usually this way but
+You pull me in and I'm a little more brave
+It's the first kiss, it's flawless, really something, it's fearless
+Oh, yeah
+'Cause I don't know how it gets better than this
+You take my hand and drag me head first
+Fearless
+And I don't know why
+But with you I'd dance in a storm
+In my best dress
+Fearless
+'Cause I don't know how it gets better than this
+You take my hand and drag me head first
+Fearless
+And I don't know why
+But with you I'd dance in a storm
+In my best dress
+Fearless
+Oh, oh, oh yeah
+
+--------------------------------------- OUR SONG -----------------------------------------
+I was ridin' shotgun with my hair undone
+In the front seat of his car
+He's got a one-hand feel on the steering wheel
+The other on my heart
+I look around, turn the radio down
+He says, "Baby, is something wrong?"
+I say, "Nothing, I was just thinkin' how we don't have a song"
+And he says
+Our song is the slamming screen door
+Sneakin' out late, tapping on your window
+When we're on the phone, and you talk real slow
+'Cause it's late, and your mama don't know
+Our song is the way you laugh
+The first date, "Man, I didn't kiss her, and I should have"
+And when I got home, 'fore I said, "Amen"
+Asking God if he could play it again
+I was walkin' up the front porch steps after everything that day
+Had gone all wrong and been trampled on
+And lost and thrown away
+Got to the hallway, well on my way to my lovin' bed
+I almost didn't notice all the roses
+And the note that said
+Our song is the slamming screen door
+Sneakin' out late, tapping on your window
+When we're on the phone, and you talk real slow
+'Cause it's late, and your mama don't know
+Our song is the way you laugh
+The first date, "Man, I didn't kiss her and I should have"
+And when I got home, 'fore I said, "Amen"
+Asking God if he could play it again
+I've heard every album, listened to the radio
+Waited for something to come along
+That was as good as our song
+'Cause our song is the slamming screen door
+Sneakin' out late, tapping on his window
+When we're on the phone, and he talks real slow
+'Cause it's late, and his mama don't know
+Our song is the way he laughs
+The first date, "Man, I didn't kiss him, and I should have"
+And when I got home, 'fore I said, "Amen"
+Askin' God if he could play it again, play it again
+Oh, yeah
+Oh, oh yeah
+I was ridin' shotgun with my hair undone
+In the front seat of his car
+I grabbed a pen and an old napkin
+And I wrote down our song
+
+-------------------------------------- PICTURE TO BURN --------------------------------------
+State the obvious, I didn't get my perfect fantasy
+I realize you love yourself more than you could ever love me
+So go and tell your friends that I'm obsessive and crazy
+That's fine, you won't mind if I say
+By the way
+I hate that stupid old pickup truck you never let me drive
+You're a redneck heartbreak who's really bad at lying
+So watch me strike a match on all my wasted time
+As far as I'm concerned, you're just another picture to burn
+There's no time for tears
+I'm just sitting here planning my revenge
+There's nothing stopping me
+From going out with all of your best friends
+And if you come around saying sorry to me
+My daddy's gonna show you how sorry you'll be
+'Cause I hate that stupid old pickup truck you never let me drive
+You're a redneck heartbreak who's really bad at lying
+So watch me strike a match on all my wasted time
+As far as I'm concerned, you're just another picture to burn
+And if you're missing me, you'd better keep it to yourself
+'Cause coming back around here would be bad for your health
+'Cause I hate that stupid old pickup truck you never let me drive
+You're a redneck heartbreak who's really bad at lying
+So watch me strike a match on all my wasted time
+In case you haven't heard, I really, really hate that
+Stupid old pickup truck you never let me drive
+You're a redneck heartbreak who's really bad at lying
+So watch me strike a match on all my wasted time
+As far as I'm concerned, you're just another picture to burn
+Burn, burn, burn, baby, burn
+Just another picture to burn
+Baby, burn
+
+------------------------------------ STATE OF GRACE ---------------------------------------
+I'm walking fast through the traffic lights
+Busy streets and busy lives
+And all we know is touch and go
+We are alone with our changing minds
+We fall in love 'til it hurts or bleeds, or fades in time
+And I never (never)
+Saw you coming
+And I'll never (never)
+Be the same
+You come around and the armor falls
+Pierce the room like a cannonball
+Now all we know is don't let go
+We are alone, just you and me
+Up in your room and our slates are clean
+Just twin fire signs, four blue eyes
+So you were never a saint
+And I've loved in shades of wrong
+We learn to live with the pain
+Mosaic broken hearts
+But this love is brave and wild
+And I never (never)
+Saw you coming
+And I'll never (never)
+Be the same
+This is a state of grace
+This is the worthwhile fight
+Love is a ruthless game
+Unless you play it good and right
+These are the hands of fate
+You're my Achilles heel
+This is the golden age of something good and right and real
+And I never (never)
+Saw you coming
+And I'll never
+Be the same
+And I never (never)
+Saw you coming
+And I'll never (so you were never a saint)
+(And I've loved in shades of wrong)
+Be the same (we learn to live with the pain)
+(Mosaic broken hearts)
+(But this love is brave and wild)
+This is a state of grace
+This is the worthwhile fight
+Love is a ruthless game
+Unless you play it good and right
+
+-------------------------------------- ALL TOO WELL ----------------------------------------
+
+I walked through the door with you, the air was cold
+But somethin' 'bout it felt like home somehow
+And I left my scarf there at your sister's house
+And you've still got it in your drawer, even now
+
+Oh, your sweet disposition and my wide-eyed gaze
+We're singin' in the car, getting lost upstate
+Autumn leaves fallin' down like pieces into place
+And I can picture it after all these days
+
+And I know it's long gone and
+That magic's not here no more
+And I might be okay, but I'm not fine at all
+Oh, oh, oh
+
+'Causе there we arе again on that little town street
+You almost ran the red 'cause you were lookin' over at me
+Wind in my hair, I was there
+I remember it all too well
+
+Photo album on the counter
+Your cheeks were turnin' red
+You used to be a little kid with glasses in a twin-sized bed
+And your mother's tellin' stories 'bout you on the tee-ball team
+You taught me 'bout your past thinkin' your future was me
+
+And you were tossing me the car keys
+Fuck The Patriarchy keychain on the ground
+We were always skippin' town
+And I was thinkin' on the drive down: Any time now
+He's gonna say it's love
+You never called it what it was
+
+Till we were dead and gone and buried
+Check the pulse and come back swearing, it's the same
+After three months in the grave
+And then you wondered where it went to as I reached for you
+But all I felt was shame
+And you held my lifeless frame
+
+And I know it's long gone and
+There was nothing else I could do
+And I forget about you long enough
+To forget why I needed to
+
+'Cause there we are again in the middle of the night
+We're dancin' 'round the kitchen in the refrigerator light
+Down the stairs, I was there
+I remember it all too well
+
+And there we are again when nobody had to know
+You kept me like a secret, but I kept you like an oath
+Sacred prayer and we'd swear
+To remember it all too well, yeah
+
+Well, maybe we got lost in translation
+Maybe I asked for too much
+But maybe this thing was a masterpiece till you tore it all up
+Runnin' scared, I was there
+I remember it all too well
+
+And you call me up again just to break me like a promise
+So casually cruel in the name of bein' honest
+I'm a crumpled-up piece of paper lyin' here
+'Cause I remember it all, all, all
+
+They say all's well that ends well
+But I'm in a new hell every time
+You double-cross my mind
+You said if we had been closer in age
+Maybe it would've been fine
+And that made me want to die
+
+The idea you had of me, who was she?
+A never-needy, ever-lovely jewel
+Whose shine reflects on you
+Not weepin' in a party bathroom
+Some actress askin' me what happened: You
+That's what happened: You
+
+You who charmed my dad with self-effacing jokes
+Sippin' coffee like you're on a late-night show
+But then he watched me watch the front door all night
+Willin' you to come
+And he said: It's supposed to be fun
+Turning twenty-one
+
+Time won't fly, it's like I'm paralyzed by it
+I'd like to be my old self again
+But I'm still tryin' to find it
+After plaid shirt days and nights when you made me your own
+Now you mail back my things and I walk home alone
+
+But you keep my old scarf from that very first week
+'Cause it reminds you of innocence and it smells like me
+You can't get rid of it
+'Cause you remember it all too well, yeah
+
+'Cause there we are again when I loved you so
+Back before you lost the one real thing you've ever known
+It was rare, I was there
+I remember it all too well
+
+Wind in my hair, you were there
+You remember it all
+Down the stairs, you were there
+You remember it all
+It was rare, I was there
+I remember it all too well
+
+And I was never good at tellin' jokes, but the punch line goes
+I'll get older, but your lovers stay my age
+From when your Brooklyn broke my skin and bones
+I'm a soldier who's returning half her weight
+
+And did the twin flame bruise paint you blue?
+Just between us, did the love affair maim you too?
+'Cause in this city's barren cold
+I still remember the first fall of snow
+And how it glistened as it fell
+I remember it all too well
+
+Just between us, did the love affair maim you all too well?
+Just between us, do you remember it all too well?
+Just between us (just between us) I remember it all too well (wind in my hair)
+(I was there, I was there)
+(Down the stairs, I was there, I was there)
+(Sacred prayer, I was there, I was there)
+(It was rare, you remember it all too well)
+
+(Wind in my hair, I was there, I was there)
+(Down the stairs, I was there, I was there)
+(Sacred prayer, I was there, I was there)
+(It was rare, you remember it all too well)
+
+(Wind in my hair, I was there, I was there)
+(Down the stairs, I was there, I was there)
+(Sacred prayer, I was there, I was there)
+(It was rare, you remember it)
+
+(Wind in my hair, I was there, I was there)
+(Down the stairs, I was there, I was there)
+(Sacred prayer, I was there, I was there)
+
